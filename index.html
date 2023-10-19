@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios y mapas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Formularios y mapas</h1>
+    </header>
+    <main>
+        <h2>Subtitulo</h2>
+        <form action="./show_data.html">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre completo:</label>
+                <input placeholder="Pepito Perez" name="name" id="nombre" type="text" required>
+                <label>
+                    DNI:
+                    <input name="dni" type="number" maxlength="8" max="99999999" required>
+                </label>
+                <label>
+                    Fecha de nacimiento:
+                    <input name="date" type="date">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <label>
+                    Direccion:
+                    <input name="adress" type="text">
+                </label>
+                <label>
+                    Telefono:
+                    <input name="phone" type="text">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Equipamiento</legend>
+                <fieldset class="talle">
+                    <legend>Talle de camiseta</legend>
+                    <label>
+                        S
+                        <input type="radio" name="size" value="s">
+                    </label>
+                    <label>
+                        M
+                        <input type="radio" name="size" value="m">
+                    </label>
+                    <label>
+                        L
+                        <input type="radio" name="size" value="l">
+                    </label>
+
+                </fieldset>
+                <!-- <select name="" id="" multiple>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select> -->
+            </fieldset>
+            <fieldset>
+                <legend>Comentarios</legend>
+                <textarea placeholder="Dejanos tu comentario (maximo 125 caracteres)" name="comments" maxlength="125"
+                    id="comments" cols="30" rows="5"></textarea>
+            </fieldset>
+            <input type="submit">
+        </form>
+        <section class="extra">
+            <h2>Extras</h2>
+            <article>
+                <h3>Mapa</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249656.18612072885!2d14.892649510163062!3d12.12050528942177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x111963cd18fcf74f%3A0xb8a3e92c76d2aa3b!2sYamena%2C%20Chad!5e0!3m2!1ses!2sar!4v1697731533504!5m2!1ses!2sar"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+            <article>
+                <h3>Video</h3>
+                <iframe height="315" src="https://www.youtube.com/embed/RaQr3pBQ8bc?si=5wyVimlmOCHOESPW&amp;start=224"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </article>
+            <article>
+                <h3>Noticia Importante</h3>
+                <blockquote class="twitter-tweet">
+                    <p lang="es" dir="ltr">&quot;Yo me vi (Autorretrato)&quot;: el nuevo tema de <a
+                            href="https://twitter.com/Ricardo_Arjona?ref_src=twsrc%5Etfw">@Ricardo_Arjona</a> en su
+                        nuevo álbum <a
+                            href="https://twitter.com/hashtag/Negro?src=hash&amp;ref_src=twsrc%5Etfw">#Negro</a>.<a
+                            href="https://t.co/ASKcwVxo6B">https://t.co/ASKcwVxo6B</a></p>&mdash; Noticias Argentinas
+                    (@NAagencia) <a
+                        href="https://twitter.com/NAagencia/status/1446508378809831431?ref_src=twsrc%5Etfw">October 8,
+                        2021</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Formularios y mapas</p>
+    </footer>
+</body>
+</html>
